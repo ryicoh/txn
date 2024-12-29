@@ -1,6 +1,7 @@
+export type TxnId = number;
 
-let currentTxnId = 1
+let currentTxnId: TxnId = 1;
 
-export const getTxnId = () => {
-    return currentTxnId++
-}
+export const getTxnId = (): TxnId => {
+  return currentTxnId++;
+};
